@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 5px;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #addae7;
+}
+
+.container {
+    background-color: #e6f9ff;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0 0 1em;
+}
+
+p {
+    /* max-width: 55ch; */
+    padding-top: 1em;
+    color: #137c99;
+}
+
+img {
+    height: 30vh;
+    margin: 2em 1em;
+    border-radius: 20px;
+}
+
+.header{
+    border-bottom: 1px solid #c1cfe0;
+    color:  #137c99;
+}
+
+.content {
+    margin: 1em;
+}
+
+/*-------
+nav styles
+--------*/
+
+.nav,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    background-color: #75bfd3;
+    width: 45%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 10%;
+    z-index: 1;
+    padding: 0 0.25em;
+    display: none;
+}
+
+.nav-list-item {
+    list-style-type: none;
+    padding: 0.5em;
+}
+
+.nav-list-item:hover {
+    cursor: pointer;
+    background-color: #399ac7;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(57, 55, 55);
+}
+
+.nav-list-item:hover .nav-link,
+.nav-list-item:hover .close-menu-icon {
+    color: white;
+}
+
+.open-menu,
+.close-menu {
+    width: 3%;
+    margin-left: auto;  
+    padding: 0.5em 1.5em 0 0;
+    
+}
+
+.open-menu {
+    color: #447bae;
+}
+
+.close-menu {
+    color: #092f52;
+}
+
+.open-menu:hover {
+    color: #092f52;
+    cursor: pointer;
+}
+
+/*-------
+toggle styles
+--------*/
+
+.inactive-container {
+    opacity: 60%;  
+}
+
+.active-nav {
+    display: block;
+}
+
+@media (min-width: 700px) {
+
+    .nav {
+        width: 25%;
+        right: 15%;
+
+    }
+
+    img {
+        height: 60vh;
+        margin: 2em 1em;
+        border-radius: 20px;
+    }
+} 
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
